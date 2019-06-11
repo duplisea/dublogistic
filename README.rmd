@@ -12,10 +12,12 @@ It is a six parameter model and therefore it is quite demanding. So for example 
 
 ## The double logistic function
 
-A double logistic function can be written in several different ways. It is the product of two logistic curves and some of the parameterisations seem fairly intuitive while less so for others. The one used here is
+A double logistic function can be written in several different ways. It is the product of two logistic curves and some of the parameterisations seem fairly intuitive while less so for others. The one used here is: (the latex equation does not render properly in github a markdown file so the gif of the equation is also included
  
 
 $$S_L=\frac{\Omega_{max}}{1+e^{(-\alpha_1\cdot (L-\beta_1)}}\cdot \frac{1-\Omega_{min}}{1+e^{(-\alpha_2\cdot (L-\beta_2))}}$$
+
+
 ![](README_files/figure-markdown_strict/dublogistic.gif)
  
 Where $S_L$ is the selectivity at length, L is length, $\alpha_1$ is the slope of the first (ascending) logistic curve $\alpha_2$ is the slope of the second (descending) logistic curve, $\beta_1$ is the inflection point of the first (ascending) logistic curve, $\beta_2$ is the inflection point of the second (descending) logistic curve, $\Omega_{max}$ is the maximum selectivity level of the curve for simple logistic and $\Omega_{min}$ is the minumum asymptotic selectivity level of the curve.

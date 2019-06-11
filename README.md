@@ -26,9 +26,12 @@ The double logistic function
 
 A double logistic function can be written in several different ways. It
 is the product of two logistic curves and some of the parameterisations
-seem fairly intuitive while less so for others. The one used here is
+seem fairly intuitive while less so for others. The one used here is:
+(the latex equation does not render properly in github a markdown file
+so the gif of the equation is also included
 
 $$S\_L=\\frac{\\Omega\_{max}}{1+e^{(-\\alpha\_1\\cdot (L-\\beta\_1)}}\\cdot \\frac{1-\\Omega\_{min}}{1+e^{(-\\alpha\_2\\cdot (L-\\beta\_2))}}$$
+
 ![](README_files/figure-markdown_strict/dublogistic.gif)
 
 Where *S*<sub>*L*</sub> is the selectivity at length, L is length,

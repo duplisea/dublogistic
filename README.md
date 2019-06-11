@@ -29,6 +29,7 @@ is the product of two logistic curves and some of the parameterisations
 seem fairly intuitive while less so for others. The one used here is
 
 $$S\_L=\\frac{\\Omega\_{max}}{1+e^{(-\\alpha\_1\\cdot (L-\\beta\_1)}}\\cdot \\frac{1-\\Omega\_{min}}{1+e^{(-\\alpha\_2\\cdot (L-\\beta\_2))}}$$
+![](/home/daniel/github/dublogistic/dublogistic.gif)
 
 Where *S*<sub>*L*</sub> is the selectivity at length, L is length,
 *α*<sub>1</sub> is the slope of the first (ascending) logistic curve

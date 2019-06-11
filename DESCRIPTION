@@ -1,0 +1,14 @@
+Package: dublogistic
+Type: Package
+Title: Explore the double logistic function as a selectivity curve for fisheries modelling
+Version: 0.1.0
+Author: Daniel E. Duplisea
+Maintainer: Daniel Duplisea <daniel.duplisea@dfo-mpo.gc.ca>
+Description: Exploration of a double logistic curve for modelling fishery selectivity. Just one parameterisation that can be used. If you are serious about using this kind of curve, checkout the sicegar library in R and fisheries models that use a double logistic already, SS3 for example.
+License: 2019 GPL
+Encoding: UTF-8
+LazyData: true
+Depends:
+Suggests:
+  sicegar
+RoxygenNote: 6.1.1

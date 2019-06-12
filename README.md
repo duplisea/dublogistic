@@ -30,19 +30,18 @@ seem fairly intuitive while less so for others. The one used here is:
 (the latex equation does not render properly in github a markdown file
 so the gif of the equation is also included
 
-$$S\_L=\\frac{\\Omega\_{max}}{1+e^{(-\\alpha\_1\\cdot (L-\\beta\_1)}}\\cdot \\frac{1-\\Omega\_{min}}{1+e^{(-\\alpha\_2\\cdot (L-\\beta\_2))}}$$
+$$S\_L=\\frac{\\Omega\_1}{1+e^{(-\\alpha\_1\\cdot (L-\\beta\_1)}}\\cdot \\frac{1-\\Omega\_2}{1+e^{(-\\alpha\_2\\cdot (L-\\beta\_2))}}$$
 
-![](README_files/figure-markdown_strict/dublogistic.gif)
+![](README_files/figure-markdown_strict/doublelogistic.gif)
 
 Where *S*<sub>*L*</sub> is the selectivity at length, L is length,
 *α*<sub>1</sub> is the slope of the first (ascending) logistic curve
 *α*<sub>2</sub> is the slope of the second (descending) logistic curve,
 *β*<sub>1</sub> is the inflection point of the first (ascending)
 logistic curve, *β*<sub>2</sub> is the inflection point of the second
-(descending) logistic curve, *Ω*<sub>*m**a**x*</sub> is the maximum
-selectivity level of the curve for simple logistic and
-*Ω*<sub>*m**i**n*</sub> is the minumum asymptotic selectivity level of
-the curve.
+(descending) logistic curve, *Ω*<sub>1</sub> is the maximum selectivity
+level of the curve for simple logistic and *Ω*<sub>2</sub> is the
+minumum asymptotic selectivity level of the curve.
 
 This parameterisation contains the intuitive points that a fisheries
 modeller would think about when trying to develop a selectivity curve
@@ -58,8 +57,7 @@ the descending part of the curve if it is dome shaped. The slopes and
 inflections together tend to describe the width of the plateau in
 selectivity of a dome shaped curve. The final parameter is the
 asymptotic selectivity level for a dome shaped curve. If you want just a
-simple logistic curve you can set
-*Ω*<sub>*m**i**n*</sub>=*Ω*<sub>*m**a**x*</sub>.
+simple logistic curve you can set *Ω*<sub>2</sub>=*Ω*<sub>1</sub>.
 
 Install and load package
 ------------------------

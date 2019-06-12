@@ -1,6 +1,6 @@
 ---
 title: "Double logistic fishery selectivity function"
-output: md_document
+output: html_document
 ---
 
 [![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
@@ -15,16 +15,16 @@ It is a six parameter model and therefore it is quite demanding. So for example 
 A double logistic function can be written in several different ways. It is the product of two logistic curves and some of the parameterisations seem fairly intuitive while less so for others. The one used here is: (the latex equation does not render properly in github a markdown file so the gif of the equation is also included
  
 
-$$S_L=\frac{\Omega_{max}}{1+e^{(-\alpha_1\cdot (L-\beta_1)}}\cdot \frac{1-\Omega_{min}}{1+e^{(-\alpha_2\cdot (L-\beta_2))}}$$
+$$S_L=\frac{\Omega_1}{1+e^{(-\alpha_1\cdot (L-\beta_1)}}\cdot \frac{1-\Omega_2}{1+e^{(-\alpha_2\cdot (L-\beta_2))}}$$
 
 
-![](README_files/figure-markdown_strict/dublogistic.gif)
+![](README_files/figure-markdown_strict/doublelogistic.gif)
  
-Where $S_L$ is the selectivity at length, L is length, $\alpha_1$ is the slope of the first (ascending) logistic curve $\alpha_2$ is the slope of the second (descending) logistic curve, $\beta_1$ is the inflection point of the first (ascending) logistic curve, $\beta_2$ is the inflection point of the second (descending) logistic curve, $\Omega_{max}$ is the maximum selectivity level of the curve for simple logistic and $\Omega_{min}$ is the minumum asymptotic selectivity level of the curve.
+Where $S_L$ is the selectivity at length, L is length, $\alpha_1$ is the slope of the first (ascending) logistic curve $\alpha_2$ is the slope of the second (descending) logistic curve, $\beta_1$ is the inflection point of the first (ascending) logistic curve, $\beta_2$ is the inflection point of the second (descending) logistic curve, $\Omega_1$ is the maximum selectivity level of the curve for simple logistic and $\Omega_2$ is the minumum asymptotic selectivity level of the curve.
 
 This parameterisation contains the intuitive points that a fisheries modeller would think about when trying to develop a selectivity curve for a particular species, stock and gear type.
 
-The inflection points are the points of maximum steepness of each of the selectivity curves, i.e. the minimum length of fish where the majority are caught by the gear. The slopes describe how much selectivity changes for a unit change in size, i.e. how quickly (in terms of fish length) a gear goes from low to high selectivity for individuals. The first slope describes the initial increase in selectivity while the second describes the descending part of the curve if it is dome shaped. The slopes and inflections together tend to describe the width of the plateau in selectivity of a dome shaped curve. The final parameter is the asymptotic selectivity level for a dome shaped curve. If you want just a simple logistic curve you can set $\Omega_{min}$=$\Omega_{max}$.
+The inflection points are the points of maximum steepness of each of the selectivity curves, i.e. the minimum length of fish where the majority are caught by the gear. The slopes describe how much selectivity changes for a unit change in size, i.e. how quickly (in terms of fish length) a gear goes from low to high selectivity for individuals. The first slope describes the initial increase in selectivity while the second describes the descending part of the curve if it is dome shaped. The slopes and inflections together tend to describe the width of the plateau in selectivity of a dome shaped curve. The final parameter is the asymptotic selectivity level for a dome shaped curve. If you want just a simple logistic curve you can set $\Omega_2$=$\Omega_1$.
 
 
 ```{r setup, include=FALSE}
